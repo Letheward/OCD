@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>OCD Colorscheme</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  
+  <body>
+    <div id="left">
+<pre>
+<span class="keyword">bool</span> <span class="function">insertion_sort</span>(<span class="function">Array</span>(<span class="keyword">u64</span>) <span class="variable">in</span>) {
+
+    <span class="keyword">if</span> (<span class="variable">in</span>.<span class="variable">count</span> <span class="operator"><</span> <span class="number">2</span>) <span class="keyword">return</span> <span class="constant">false</span>;
+
+    <span class="keyword">for</span> (<span class="keyword">u64</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; <span class="variable">i</span> <span class="operator"><</span> <span class="variable">in</span>.<span class="variable">count</span>; <span class="variable">i</span><span class="operator">++</span>) {
+
+        <span class="keyword">u64</span> <span class="variable">key</span> <span class="operator">=</span> <span class="variable">in</span>.<span class="variable">data</span>[<span class="variable">i</span>];
+        
+        <span class="comment">// move stuff up</span>
+        <span class="keyword">u64</span> <span class="variable">j</span> <span class="operator">=</span> <span class="variable">i</span>;
+        <span class="keyword">while</span> (<span class="variable">j</span> <span class="operator">></span> <span class="number">0</span> <span class="operator">&&</span> <span class="variable">key</span> <span class="operator"><</span> <span class="variable">in</span>.<span class="variable">data</span>[<span class="variable">j</span> <span class="operator">-</span> <span class="number">1</span>]) {
+            <span class="variable">in</span>.<span class="variable">data</span>[<span class="variable">j</span>] <span class="operator">=</span> <span class="variable">in</span>.<span class="variable">data</span>[<span class="variable">j</span> <span class="operator">-</span> <span class="number">1</span>];
+            <span class="variable">j</span><span class="operator">--</span>;
+        }
+
+        <span class="variable">in</span>.<span class="variable">data</span>[<span class="variable">j</span>] <span class="operator">=</span> <span class="variable">key</span>;
+        <span class="function">printf</span>(<span class="string">"the value of j is <span class="special">%llu\n</span>"</span>, <span class="variable">j</span>);
+    }
+
+    <span class="keyword">return</span> <span class="constant">true</span>;
+}</pre>
+    </div>
+  
+    <div id="right">
+      <p class="normal">Normal Text</p>
+      <p class="comment">// This is a comment</p>
+      <p class="operator">* + - / = % ~ ^ &amp;&amp; or and</p>
+      <p class="keyword">int float if else return for while</p>
+      <p class="number">0123456789 4.691604e12 0xfefefefe</p>
+      <p class="constant">NULL nil true false</p>
+      <p class="string">"a string and a character" 'c'</p>
+      <p class="variable">variable_name instance.member</p>
+      <p class="function">function_name()</p>
+      <p class="tag">class= id= auto sans-serif</p>
+      <p class="class">document Number Array self</p>
+      <p class="error">{}} [[] bad_name shpell_error</p>
+      <p class="code">`int c_in_markdown();`</p>
+      <p class="special">\s \\ %d &amp;amp;</p>
+    </div>
+
+  </body>
+</html>

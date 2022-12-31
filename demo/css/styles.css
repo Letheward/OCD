@@ -1,0 +1,100 @@
+body {
+    
+    background-color: #222222;
+
+    margin: 10px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    
+    margin: 20px;
+    padding: 40px;
+    padding-top: 70px;
+
+    flex: 1;
+}
+
+#right {
+    
+    font-family: Jetbrains Mono, monospace;
+    font-size: 24px;
+    color: #cccccc;
+
+    margin: 20px;
+    margin-right: 0;
+    padding: 40px;
+    
+    flex: 1;
+}
+
+pre {
+    
+    font-family: Jetbrains Mono, monospace;
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    line-break: auto;
+    
+    margin: 0;
+} 
+
+.normal {
+    color: #cccccc;
+}
+
+.comment {
+    color: #aaaaaa;
+}
+
+.operator {
+    color: #888888;
+}
+
+.keyword {
+    color: #cc9933;
+}
+
+.number {
+    color: #996699;
+}
+
+.constant {
+    color: #996699;
+}
+
+.string {
+    color: #996699;
+}
+
+.variable {
+    color: #669999;
+}
+
+.function {
+    color: #669966;
+}
+
+.tag {
+    color: #cc9933;
+}
+
+.class {
+    color: #cc6666;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.code {
+    color: #cc3399;
+}
+
+.special {
+    color: #cc6633;
+}
+
+
