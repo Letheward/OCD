@@ -4,7 +4,7 @@
 
 A low-key colorscheme for programming.
 
-## How to install
+## How to Install
 
 - Neovim
 
