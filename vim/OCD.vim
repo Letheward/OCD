@@ -154,5 +154,5 @@ hi markdownBlockquote          guifg=#669966                          cterm=NONE
 hi markdownLinkText            guifg=#cc9933                          cterm=NONE
 hi markdownUrl                 guifg=#996699       gui=underline cterm=underline
 
-hi markdownCodeDelimiter       guifg=#ff3399                          cterm=NONE
-hi markdownCode                guifg=#ff3399                          cterm=NONE
+hi markdownCodeDelimiter       guifg=#ff6699                          cterm=NONE
+hi markdownCode                guifg=#ff6699                          cterm=NONE

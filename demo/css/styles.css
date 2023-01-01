@@ -1,12 +1,24 @@
 body {
     
     background-color: #222222;
+    color: #cccccc;
 
     margin: 10px;
 
     display: flex;
     flex-direction: row;
 }
+
+pre {
+    
+    font-family: JetBrains Mono, monospace;
+    font-variant-ligatures: none;   
+    font-size: 15px;
+    line-height: 24px;
+    line-break: auto;
+
+    margin: 0;
+} 
 
 #left {
     
@@ -22,7 +34,6 @@ body {
     font-family: JetBrains Mono, monospace;
     font-variant-ligatures: none;
     font-size: 24px;
-    color: #cccccc;
 
     margin: 20px;
     margin-right: 0;
@@ -30,18 +41,6 @@ body {
     
     flex: 1;
 }
-
-pre {
-    
-    font-family: JetBrains Mono, monospace;
-    font-variant-ligatures: none;   
-    font-size: 15px;
-    line-height: 24px;
-    color: #cccccc;
-    line-break: auto;
-
-    margin: 0;
-} 
 
 .normal {
     color: #cccccc;
@@ -92,11 +91,9 @@ pre {
 }
 
 .code {
-    color: #cc3399;
+    color: #ff6699;
 }
 
 .special {
     color: #cc6600;
 }
-
-
