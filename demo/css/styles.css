@@ -19,7 +19,8 @@ body {
 
 #right {
     
-    font-family: Jetbrains Mono, monospace;
+    font-family: JetBrains Mono, monospace;
+    font-variant-ligatures: none;
     font-size: 24px;
     color: #cccccc;
 
@@ -32,12 +33,13 @@ body {
 
 pre {
     
-    font-family: Jetbrains Mono, monospace;
+    font-family: JetBrains Mono, monospace;
+    font-variant-ligatures: none;   
     font-size: 15px;
     line-height: 24px;
     color: #cccccc;
     line-break: auto;
-    
+
     margin: 0;
 } 
 
