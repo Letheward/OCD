@@ -1,0 +1,20 @@
+{
+    "name": "theme-ocd",
+    "displayName": "OCD Colorschme",
+    "description": "A low-ley colorscheme",
+    "publisher": "Letheward",
+    "version": "0.0.1",
+    "icon": "img/ocd.png",
+    "categories": ["Themes"],
+    "engines": {"vscode": "*"},
+    "contributes": {
+        "themes": [
+            {
+                "label": "OCD",
+                "uiTheme": "vs-dark",
+                "path": "./theme/ocd.json"
+            }
+        ]
+    },
+    "license": "public domain"
+}
