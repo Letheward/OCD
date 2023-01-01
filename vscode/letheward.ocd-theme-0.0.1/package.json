@@ -1,12 +1,12 @@
 {
     "name": "theme-ocd",
     "displayName": "OCD Colorschme",
-    "description": "A low-ley colorscheme",
+    "description": "A low-key colorscheme",
     "publisher": "Letheward",
     "version": "0.0.1",
     "icon": "img/ocd.png",
     "categories": ["Themes"],
-    "engines": {"vscode": "*"},
+    "engines": {"vscode": "^1.40.1"},
     "contributes": {
         "themes": [
             {
