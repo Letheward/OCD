@@ -84,7 +84,7 @@ hi Function                    guifg=#669966                 gui=NONE cterm=NONE
 hi UserType                    guifg=#669966                          cterm=NONE
 
 " Special
-hi Special                     guifg=#cc6633                          cterm=NONE
+hi Special                     guifg=#cc6600                          cterm=NONE
 hi Typedef                     guifg=#888888                          cterm=NONE
 hi Tag                         guifg=#cc9933                          cterm=NONE
 hi Debug                       guifg=#aaaaaa                          cterm=NONE
