@@ -12,23 +12,31 @@
   <body>
     <div id="left">
 <pre>
-<span class="keyword">bool</span> <span class="function">insertion_sort</span>(<span class="function">Array</span>(<span class="keyword">u64</span>) <span class="variable">in</span>) {
 
-    <span class="keyword">if</span> (<span class="variable">in</span>.<span class="variable">count</span> <span class="operator"><</span> <span class="number">2</span>) <span class="keyword">return</span> <span class="constant">false</span>;
+<span class="keyword">#define</span> <span class="variable">DEBUG</span> <span class="constant">true</span> 
 
-    <span class="keyword">for</span> (<span class="keyword">u64</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; <span class="variable">i</span> <span class="operator"><</span> <span class="variable">in</span>.<span class="variable">count</span>; <span class="variable">i</span><span class="operator">++</span>) {
+<span class="keyword">typedef</span> <span class="keyword">bool</span> <span class="function">Compare</span>(<span class="keyword">int</span> <span class="variable">a</span>, <span class="keyword">int</span> <span class="variable">b</span>); 
 
-        <span class="keyword">u64</span> <span class="variable">key</span> <span class="operator">=</span> <span class="variable">in</span>.<span class="variable">data</span>[<span class="variable">i</span>];
+<span class="keyword">bool</span> <span class="function">insertion_sort</span>(<span class="class">Array</span>(<span class="keyword">int</span>) <span class="variable">in</span>, <span class="class">Compare</span><span class="operator">*</span> <span class="variable">compare</span>) {
+
+    <span class="keyword">if</span> (<span class="variable">in</span>.<span class="variable">count</span> <span class="operator"><</span> <span class="number">2</span>) <span class="keyword">return</span> <span class="constant">false</span>; <span class="comment">// can't sort</span>
+    
+    <span class="keyword">for</span> (<span class="class">u64</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; <span class="variable">i</span> <span class="operator"><</span> <span class="variable">in</span>.<span class="variable">count</span>; <span class="variable">i</span><span class="operator">++</span>) {
+
+        <span class="keyword">int</span> <span class="variable">key</span> <span class="operator">=</span> <span class="variable">in</span>.<span class="variable">data</span>[<span class="variable">i</span>];
         
-        <span class="comment">// move stuff up</span>
-        <span class="keyword">u64</span> <span class="variable">j</span> <span class="operator">=</span> <span class="variable">i</span>;
-        <span class="keyword">while</span> (<span class="variable">j</span> <span class="operator">></span> <span class="number">0</span> <span class="operator">&&</span> <span class="variable">key</span> <span class="operator"><</span> <span class="variable">in</span>.<span class="variable">data</span>[<span class="variable">j</span> <span class="operator">-</span> <span class="number">1</span>]) {
+        <span class="comment">// move stuff up for the insertion</span>
+        <span class="class">u64</span> <span class="variable">j</span> <span class="operator">=</span> <span class="variable">i</span>;
+        <span class="keyword">while</span> (<span class="variable">j</span> <span class="operator">></span> <span class="number">0</span> <span class="operator">&&</span> <span class="function">compare</span>(<span class="variable">key</span>, <span class="variable">in</span>.<span class="variable">data</span>[<span class="variable">j</span> <span class="operator">-</span> <span class="number">1</span>])) {
             <span class="variable">in</span>.<span class="variable">data</span>[<span class="variable">j</span>] <span class="operator">=</span> <span class="variable">in</span>.<span class="variable">data</span>[<span class="variable">j</span> <span class="operator">-</span> <span class="number">1</span>];
             <span class="variable">j</span><span class="operator">--</span>;
         }
 
         <span class="variable">in</span>.<span class="variable">data</span>[<span class="variable">j</span>] <span class="operator">=</span> <span class="variable">key</span>;
-        <span class="function">printf</span>(<span class="string">"the value of j is <span class="special">%llu\n</span>"</span>, <span class="variable">j</span>);
+        
+        <span class="keyword">#if</span> <span class="variable">DEBUG</span> <span class="operator">==</span> <span class="constant">true</span>
+            <span class="function">printf</span>(<span class="string">"Inserted [<span class="special">%d</span>] to <span class="special">%llu\n</span>"</span>, <span class="variable">key</span>, <span class="variable">j</span>);
+        <span class="keyword">#endif</span>
     }
 
     <span class="keyword">return</span> <span class="constant">true</span>;

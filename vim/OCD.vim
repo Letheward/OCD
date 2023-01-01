@@ -102,12 +102,12 @@ hi javascriptFunction          guifg=#669966                          cterm=NONE
 
 " HTML
 hi htmlTitle                   guifg=#cccccc                          cterm=NONE
-hi htmlTag                     guifg=#996699                          cterm=NONE
-hi htmlTagName                 guifg=#996699                          cterm=NONE
-hi htmlEndTag                  guifg=#996699                          cterm=NONE
+hi htmlTag                     guifg=#669999                          cterm=NONE
+hi htmlTagName                 guifg=#669999                          cterm=NONE
+hi htmlEndTag                  guifg=#669999                          cterm=NONE
 hi htmlArg                     guifg=#cc9933                          cterm=NONE
-hi htmlH1                      guifg=#996699  guibg=#222222  gui=NONE cterm=NONE
-hi htmlSpecialTagName          guifg=#996699                          cterm=NONE
+hi htmlH1                      guifg=#669999  guibg=#222222  gui=NONE cterm=NONE
+hi htmlSpecialTagName          guifg=#669999                          cterm=NONE
 hi htmlLink                    guifg=#cccccc  guibg=#222222  gui=NONE cterm=NONE
 hi htmlStrike                  guifg=#cccccc  guibg=#222222  gui=NONE cterm=NONE
 
