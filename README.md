@@ -8,7 +8,12 @@ A low-key colorscheme for programming.
 
 - Neovim
 
-    Put the `OCD.vim` file to your runtime colors folder, e.g.: `share/nvim/runtime/colors/`, and add `colorscheme OCD` to your `vimrc`.
+    Put the `OCD.vim` file to your runtime colors folder, e.g.: `share/nvim/runtime/colors/`.
+    
+    And add this line to your `vimrc`:
+    ~~~ vim
+    colorscheme OCD
+    ~~~
 
 - VS Code
 
